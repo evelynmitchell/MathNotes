@@ -1,0 +1,7 @@
+Books
+*.aux
+*.log
+*.ist
+*.glo
+*.glsdefs
+*.synctex.gz

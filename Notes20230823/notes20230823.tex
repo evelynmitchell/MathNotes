@@ -1,0 +1,117 @@
+\documentclass[]{scrartcl}
+
+%opening
+\title{Notes 2023-08-23}
+\author{Evelyn Mitchell}
+
+\usepackage{amsmath,amssymb}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+\usepackage{glossaries} \makeglossaries
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Mathematical Truth}
+
+https://plato.stanford.edu/entries/intuitionistic-logic-development/\#ProoInte
+
+Truth in intuitionistic logic is \textbf{by construction}. That is, you must be able to construct an instance of the asserted statement in order to assume it.
+
+\begin{quote}
+BHK-Interpretation (for "Brouwer, Heyting, Kolmogorov") or Proof Interpretation as given by Troelstra and van Dalen in Constructivism in Mathematics (Troelstra and van Dalen 1988: 9):
+
+(H1)A proof of $A \land B$ is given by presenting a proof of $A$ and a proof of $B$. 
+
+(H2)A proof of $A \lor B$ is given by presenting either a proof of $A$ or a proof of $B$ (plus the stipulation that we want to regard the proof presented as evidence for $A \lor B$). 
+
+(H3)A proof of $A \implies B$ is a construction which permits us to transform any proof of $A$ into a proof of $B$. 
+
+(H4)Absurdity $\bot$ (contradiction) has no proof; a proof of $\not A$ is a construction which transforms any hypothetical proof of A into a proof of a contradiction. 
+
+(H5)A proof of $\forall xA(x)$ is a construction which transforms a proof of $d \in D$ ($D$ the intended range of the variable $x$) into a proof of $A(d)$. 
+
+(H6)A proof of $\exists xA(x)$ is given by providing $d \in D$, and a proof of $A(d)$.
+\end{quote}
+
+\section{typesetting}
+
+For proofs: $https://www.overleaf.com/learn/latex/Theorems_and_proofs$
+
+$\land$ is logical and.
+
+$\lor$ is logical or.
+
+$\bot$ is contradiction.
+
+$\implies$ is logical implication. If the left side is true, the right side is true.
+
+$\in$ is an element of
+
+$\forall$ for all
+
+$\exists$ exists
+
+
+\section{Glossary}
+
+\newglossaryentry{condition}{%
+name={condition},
+description={%
+	To \textbf{condition} a formula is to give a proposition or propositions which restrict the formula to certain values.
+},
+} 
+
+%\gls{label}. 
+\gls{condition} Example: 
+
+$q(s,a) = \EX[G_t |S_t=s, A_t=a]$
+
+The Expectation is conditioned on $S_t=s$ and $A_t=a$ .
+
+(The example is from Reinforcement Learning: https://youtu.be/TCCjZe0y4Qc ; Sutton and Barto 2018)
+ 
+\newglossaryentry{contradiction}{%
+name={contradiction},
+description={\textbf {contradiction}, symbol $\bot$ . Also known as Absurdity.
+}
+}
+
+\printglossaries
+
+\section{Bourbaki Theory of Sets}
+
+I'm taking a suggestion to follow the formal path into proof writing. Thus, Nicolas Boutbaki, Elements of Mathematics, Volume 1: Theory of Sets
+
+Each chapter proceeds in a logical order, with later parts only requiring knowledge of what has come before, so no backtracking, or assuming knowledge of a later topic.
+The chapters start with \textbf{definitions}, the \textbf{axioms} and the \textbf{theorems} of the chapter.
+
+Additional results are variously named as "propositions", "lemmas", "corollaries",
+ "remarks" and so on. Commentaries on especially important theorems are called "scholium".
+
+Dangerous bend passages are marked with a large Z in the margin. (So that is whewrwe Knuth got it!). These mark warnings to the reader of serious errors.
+
+Exercises are designed to cement learning, and to prompt understanding in the reader of results which are interesting, but didn't fit in the text.
+
+The authors are creating a self-contained text, as an explicit goal. There are Historical Notes with pointers to the rest of the literature, including unsolved problems.
+
+This volume includes:
+1. Description of formal mathematics.
+
+2. Theory of sets.
+
+3. Ordered sets; cardinals; natural numbers.
+
+4. Structures.
+
+\subsection{Introduction}
+
+\end{document}
