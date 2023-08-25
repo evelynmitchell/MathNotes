@@ -9,7 +9,11 @@
 
 \DeclareMathOperator{\EX}{\mathbb{E}}% expected value
 
-\usepackage{glossaries} \makeglossaries
+%\usepackage{glossaries} \makeglossaries
+
+\makeindex 
+
+%\showindex
 
 \begin{document}
 
@@ -25,26 +29,27 @@
 
 Starting at the paragraph beginning "The $axiomatic\ method$" on page 8.
 
-The goal of the axiomatic method is to write in a way which makes formalization straightforward. 
+The goal of the axiomatic method is to write in a way which makes formalization straightforward. \index{axiomatic method}
 
 \begin{quote}
 	...{the systematic use of the axiomatic method} as an instrument of discovery is one of the original features of contemporary mathematics. p8
 \end{quote}
 
-The rules of syntax are the only consideration. This is the form referred to in the term Formal Methods.
+The rules of syntax are the only consideration. This is the form referred to in the term Formal Methods.\index{Formal Methods}
 
 \begin{quote}
 	The faculty of being able to give different meanings to the words or prime concepts of a theory is indeed an important source of enrichment of the mathematician's intuition, which is not necessarily spatial or sensory as is sometimes believed, but is far more a certain for the behaviour of mathematical objects, aided often by images from very varied sources, but founded above all on everyday experience. ...
 	the axiomatic method allows us, when we are concerned with complex mathematical objects, to separate their properties and regroup them around a small number of concepts: that is to say, using a word which will receive a precise definition later, to classify them according to the $structures$ to which they belong.
+	\index{mathematical intuition} \index{mathematical objects!behavior}\index{property!of mathematical objects}
 \end{quote}
 
-To translate all of mathematics into a common formal language, whether based in The Theory of Sets, as this volume of Bourbaki attempts to, or more recently, using Category Theory as a foundation, is still a major project of mathematical research.
+To translate all of mathematics into a common formal language, whether based in The Theory of Sets, as this volume of Bourbaki attempts to, or more recently, using Category Theory as a foundation, is still a major project of mathematical research.\index{Foundations of Mathematics}
 
 In this book the rules of the formal language are described in ordinary language, and no special status is granted to any of the words or numbers used. The numbers used to label statements are merely for convenience, and could be replaced with any symbol which could distinguish, such as a type mark, or colour.
 
-In the service of compactness, new words will be introduced in the book, known as $abbreviating\ symbols$ and additional rules of syntax, called $deductive\ criteria$. 
+In the service of compactness, new words will be introduced in the book, known as $abbreviating\ symbols$ and additional rules of syntax, called $deductive\ criteria$. \index{abbreviating symbols!definition}\index{deductive criteria!definition}
 
-$metamathematics$ as a concept is introduced at the bottom of page 10. This is a move which considers mathematical texts as "assemblies of previously given objects in which only the assigned order is of importance." That is, all of the meaning of a text is dropped as a topic of interest, and only the order of combination of symbol is of interest. 
+$metamathematics$ as a concept is introduced at the bottom of page 10. This is a move which considers mathematical texts as "assemblies of previously given objects in which only the assigned order is of importance." That is, all of the meaning of a text is dropped as a topic of interest, and only the order of combination of symbol is of interest. \index{metamathematics!defintion}
 
 \begin{quote}
 	...metamathematial "arguments" usually assert that when a succession of operations has been performed on a text of a given type, then the final text will be of another given type.
@@ -52,7 +57,7 @@ $metamathematics$ as a concept is introduced at the bottom of page 10. This is a
 
 The top of page 11 discusses the bootstrap problem of this endeavour, in that numbers will need to be used in numerical ways to work through the formal problems. 
 
-As this was written in the mid 1930s, it is a bit strange they don't just assert the use of the Peano axioms \(https://en.wikipedia.org/wiki/Peano \_ axioms\) of 1889. There's a move which I'm missing, or a standard of truth. The discussion of not being able to write out the full argument every time, feels a bit handwavey, but I suppose one must make do with the technology available, and in the 1930s, they had people, and math, but not computers.
+As this was written in the mid 1930s, it is a bit strange they don't just assert the use of the Peano axioms \(https://en.wikipedia.org/wiki/Peano \_ axioms\) of 1889. There's a move which I'm missing, or a standard of truth. The discussion of not being able to write out the full argument every time, feels a bit handwavey, but I suppose one must make do with the technology available, and in the 1930s, they had people, and math, but not computers. \index{Peano axioms}
 
 And with that, they drop formalized mathematics as too difficult for their project.
 
@@ -62,12 +67,12 @@ TODO: discuss Coq, Isabelle/HOL, and LEAN as formal languages.
 
 The language they will use will include "partial, particular and incomplete formalizations".
 
-They hold to their goal of "perfect rigor", even while noting their loose use of language.
+They hold to their goal of "perfect rigor", even while noting their loose use of language.\index{perfect rigor!as Bourbaki goal}
 
 -- Stopping at section break on page 12
 
 
-\section{Peano axioms}
+\section{Peano axioms}\index{Peano axioms!the axioms}
 
 These axioms define the properties of the Natural Numbers.
 
@@ -84,7 +89,9 @@ The assumptions are two symbols, a constant $0$ and a function $S$ which takes o
 	
 	\item For all $a$ and $b$, if $b$ is a natural number and $a=b$ then $a$ is also a natural number. That is, the natural numbers are $closed$ under equality.
 	
-	\item For every natural number $n$, $S(n)$ is a natural number. $S(n)$ is the $sucessor function$. That is, the natural numbers are closed under $S$.
+	\item For every natural number $n$, $S(n)$ is a natural number.
+	$S(n)$ is the $sucessor function$. 
+	That is, the natural numbers are closed under $S$.
 	
 	\item For all natural numbers $m$ and $n$, if $S(m) = S(n)$ then $m=n$. That is, $S$ is an $injection$. An injection is a one-to-one mapping.
 	
@@ -102,8 +109,13 @@ The assumptions are two symbols, a constant $0$ and a function $S$ which takes o
 
 
 
-\section{Caching algorithm}
+\section{Caching algorithm}\index{caching algorithm}
 
 https://github.com/audreyccheng/detox
+
+\section{index}
+
+
+%\printindex
 
 \end{document}

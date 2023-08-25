@@ -12,6 +12,11 @@
 
 \usepackage{glossaries} \makeglossaries
 
+
+\makeindex 
+
+%\showindex
+
 \begin{document}
 
 \maketitle
@@ -24,7 +29,7 @@
 
 https://plato.stanford.edu/entries/intuitionistic-logic-development/\#ProoInte
 
-Truth in intuitionistic logic is \textbf{by construction}. That is, you must be able to construct an instance of the asserted statement in order to assume it.
+Truth in intuitionistic logic\index{logic!intuitionist} is \textbf{by construction}. That is, you must be able to construct an instance of the asserted statement in order to assume it.
 
 \begin{quote}
 BHK-Interpretation (for "Brouwer, Heyting, Kolmogorov") or Proof Interpretation as given by Troelstra and van Dalen in Constructivism in Mathematics (Troelstra and van Dalen 1988: 9):
@@ -42,23 +47,23 @@ BHK-Interpretation (for "Brouwer, Heyting, Kolmogorov") or Proof Interpretation 
 (H6)A proof of $\exists xA(x)$ is given by providing $d \in D$, and a proof of $A(d)$.
 \end{quote}
 
-\section{typesetting}
+\section{typesetting}\index{typedsetting}
 
 For proofs: $https://www.overleaf.com/learn/latex/Theorems_and_proofs$
 
-$\land$ is logical and.
+$\land$ is logical and.\index{symbols!logical and}\index{symbols!$\land$}
 
-$\lor$ is logical or.
+$\lor$ is logical or.\index{symbols@logical or}\index{symbols\$lor$}
 
-$\bot$ is contradiction.
+$\bot$ is contradiction.\index{symbols!contradiction}\index{symbols!$\bot$}
 
-$\implies$ is logical implication. If the left side is true, the right side is true.
+$\implies$ is logical implication. If the left side is true, the right side is true.\index{symbols!logical implication}\index{symbols!$\implies$}
 
-$\in$ is an element of
+$\in$ is an element of \index{symbols!is a element of}\index{symbls!$\in$}
 
-$\forall$ for all
+$\forall$ for all \index{symbols!for all}\index{symbols!$\forall$}
 
-$\exists$ exists
+$\exists$ exists \index{symbols!exists}\index{symbols!$\exists$}
 
 
 \section{Glossary}
@@ -89,15 +94,16 @@ description={\textbf {contradiction}, symbol $\bot$ . Also known as Absurdity.
 
 \section{Bourbaki Theory of Sets}
 
-I'm taking a suggestion to follow the formal path into proof writing. Thus, Nicolas Boutbaki, Elements of Mathematics, Volume 1: Theory of Sets
+I'm taking a suggestion to follow the formal path into proof writing. Thus, Nicolas Boutbaki, Elements of Mathematics, Volume 1: Theory of Sets\index{Bourbaki}
 
 Each chapter proceeds in a logical order, with later parts only requiring knowledge of what has come before, so no backtracking, or assuming knowledge of a later topic.
 The chapters start with \textbf{definitions}, the \textbf{axioms} and the \textbf{theorems} of the chapter.
 
 Additional results are variously named as "propositions", "lemmas", "corollaries",
- "remarks" and so on. Commentaries on especially important theorems are called "scholium".
+ "remarks" and so on. Commentaries on especially important theorems are called "scholium".\index{propositions!definition}\index{lemmas!definition}
+ \index{corollaries!definition}\index{scholium!definition}
 
-Dangerous bend passages are marked with a large Z in the margin. (So that is whewrwe Knuth got it!). These mark warnings to the reader of serious errors.
+Dangerous bend passages are marked with a large Z in the margin. (So that is where Knuth got it!). These mark warnings to the reader of serious errors.\index{symbols!Large Z}
 
 Exercises are designed to cement learning, and to prompt understanding in the reader of results which are interesting, but didn't fit in the text.
 
@@ -114,15 +120,15 @@ This volume includes:
 
 \subsection{Introduction}
 
-Mathematics, since the ancient Greeks, has had a standard of precise and rigorous explanation, known as ${proof}$.
+Mathematics, since the ancient Greeks, has had a standard of precise and rigorous explanation, known as ${proof}$.\index{proofs!definition}
 
-Bourbaki is intending to discern the structure underlying both vocabulary and syntax. That is, they are concerned with precise definition of the words used in mathematical language, and clear description of the form of mathematical statements. Their goal is "formalized" mathematics.
+Bourbaki is intending to discern the structure underlying both vocabulary and syntax. That is, they are concerned with precise definition of the words used in mathematical language, and clear description of the form of mathematical statements. Their goal is "formalized" mathematics.\index{formalized mathematics}
 
 When they were working on this project, in 1930s France, it was a novel and needed project. Now, in 2023, with the advances in mathematical theory, and computer science, the idea of formalizing knowledge precisely is still rare in the sense of popularity, but not rare in the sense of daily importance. Our entire technology stack is founded on devices with precise, constructed formal definitions, and entire tool chains based on translation between languages of higher and lesser levels of abstraction. From loose product goals such as "Given a login screen, when a new user is signing up, then create an entry in the user database for them" to computer programs assembled out of library components to intermediate representations, to machine language, down to bits flowing through silicon, each step uses the idea of formalization to create actions in the world.
 
-That doesn't mean that our technology is without error, for we do not yet have fully proof-checked programs at every layer. Nor are tools for proof repair, such as described in Ringer 2021 (https://dependenttyp.es/pdf/thesis.pdf) yet in common use.
+That doesn't mean that our technology is without error, for we do not yet have fully proof-checked programs at every layer. Nor are tools for proof repair, such as described in Ringer 2021 (https://dependenttyp.es/pdf/thesis.pdf)\index{Ringer, Talia}\index{proof rewriting} yet in common use.
 
-Since Bourbaki, and especially since Voevodsky's work on Dependent Types, mathematics has become more formalized. There are projects such as MetaMath, and Lean, to express theorems in languages such as Coq, Isabelle/HOT and Lean, which allow for computers to assist in checking proofs.
+Since Bourbaki, and especially since Voevodsky's\index{Voevodsky, Vladimir} work on Dependent Types, mathematics has become more formalized. There are projects such as MetaMath\index{MetaMath}, and LEAN\index{LEAN}, to express theorems in languages such as Coq\index{Coq, computer program}, Isabelle/HOT\index{Isabelle, computer program} and LEAN, which allow for computers to assist in checking proofs.\index{proof assistants}
 
 \begin{quote}
 	The formulae of ordinary algebraic calculation would be another example, if the rules governing the use of brackets were to be completely codified and strictly adhered to; in practice, some of these rules are never made explicit, and certain derogations of them are allowed. p7 English edition 2004

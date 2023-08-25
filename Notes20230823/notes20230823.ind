@@ -1,0 +1,74 @@
+\begin{theindex}
+
+  \item Bourbaki, 2
+
+  \indexspace
+
+  \item Coq, computer program, 3
+  \item corollaries
+    \subitem definition, 2
+
+  \indexspace
+
+  \item formalized mathematics, 2
+
+  \indexspace
+
+  \item Isabelle, computer program, 3
+
+  \indexspace
+
+  \item LEAN, 3
+  \item lemmas
+    \subitem definition, 2
+  \item logic
+    \subitem intuitionist, 1
+
+  \indexspace
+
+  \item MetaMath, 3
+
+  \indexspace
+
+  \item proof assistants, 3
+  \item proof rewriting, 3
+  \item proofs
+    \subitem definition, 2
+  \item propositions
+    \subitem definition, 2
+
+  \indexspace
+
+  \item Ringer, Talia, 3
+
+  \indexspace
+
+  \item scholium
+    \subitem definition, 2
+  \item symbls
+    \subitem $\in$, 2
+  \item symbols
+    \subitem $\bot$, 1
+    \subitem $\exists$, 2
+    \subitem $\forall$, 2
+    \subitem $\implies$, 1
+    \subitem $\land$, 1
+    \subitem contradiction, 1
+    \subitem exists, 2
+    \subitem for all, 2
+    \subitem is a element of, 2
+    \subitem Large Z, 2
+    \subitem logical and, 1
+    \subitem logical implication, 1
+  \item logical or, 1
+  \item symbols\$lor$, 1
+
+  \indexspace
+
+  \item typedsetting, 1
+
+  \indexspace
+
+  \item Voevodsky, Vladimir, 3
+
+\end{theindex}
