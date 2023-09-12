@@ -1,0 +1,67 @@
+\documentclass[]{scrartcl}
+
+%opening
+\title{notes 2023-09-12}
+
+\author{Evelyn Mitchell}
+
+\usepackage{ribbonproofs}
+
+\usepackage{amsmath,amssymb}
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}% expected value
+
+%\usepackage{glossaries} \makeglossaries
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Bourbaki Theory of Sets}
+
+\subsection{Introduction}
+
+Continuing from page 12.
+
+I got quite distracted after the last note by a flurry of thoughts. On how Bourbaki was written long ago, and, though rigorous and formal, is not nearly as rigorous and formal as the modern proof assistant tools such as LEAN and Coq. On how there is a distinction which sets don't capture, between atoms (members of a set, which could be sets) and classes of items. And by the slow delicate process of memory and grief, and awareness, and love.
+
+Reference to insert here: Joel David Hampkins on the distinction between members and classes.
+
+Continuing from the third paragraph, Bourbaki gestures in the direction of the problem of examining the consistency of a formal language  by using only the methods of that language. This is not a mathematical question, but a metamathematical one. A claim around the truthful expressiveness of a language. For if we do not know if we can be sure of the consistency of statements within a language, then it may not be suitable for the task of mathematics, which has a goal of truth. Consistency is a necessary condition for truth.
+
+There are partial formalized languages, which Bourbaki does not name, which have been proved to only express true statements. The expressiveness of such languages is not as encompassing as classical mathematics, but is still quite large. 
+
+Note the claim of consistency is not a claim of truthfulness, but only of meeting one of the requirements for a language within which we could formally state propositions which could be determined to be true or false. 
+
+Finally, there is a gesture at the idea of a hierarchy of formal languages, each more complex language more expressively powerful than the simpler ones. The hope being that if we are only to create a powerful enough language, we would once and for all be able to prove the consistency of all statements expressible in that or any less complex language. This hope, is not possible, as G\"odel proved in his second incompleteness theorem {Goedel Incompletness}, which proves that any system is not powerful enough to prove it's own consistency.
+
+The next paragraph is about relative consistency, or the use of another theory to establish the consistency of a theory, using the other theory's assumed non-contradictory-ness as a scaffold. Bourbaki calls this technique "so simple that it seems hardly possible to deny it without renouncing all rational use of our intellectual factulties." (p 12)
+
+They don't fill out the scaffolding assumption, but make a historic value analogy: it's been widely used without problem for a long time, so we can continue to use it. They do not claim this as an argument in support of the consistency of the Theory of Sets, but merely evidence of the usefulness of they Theory of Sets through widely demonstrated usefulness.
+
+As with any formal theory, if a problem is discovered in the Theory of Sets, a fix will need to be made, and those propositions which rely on the mistake will need to be corrected. In natural language mathematics, this would be done by publishing new, corrected papers, and teaching the corrected Theory. In computational mathematics, this would be done by correcting the error in the root theory and re-proving all theorems which relied on the problematic assumption. Those two methods are not the same. One relies on the flow of ideas through a community of practice, and the other a version controlled patch and Continuous Integration/Continuous Deployment run.
+
+The process of proof and correction is a resilient one, as proven by it's usefulness over the last 2500 years of mathematics. We may not have the right theory now, but we do have a self-correcting process which gradually steers in the direction of increasing certainty.
+
+\subsection{Chapter 1: Description of Formal Mathematics}
+
+\subsubsection{1. Terms and Relations}
+
+\subsubsubsection{1. Signs and Assemblies}
+
+
+The signs of a theory are:
+
+(1) The $logical$ signs: $\square$, $\tau$, $\vee$, $\neg$
+
+(2) The $letters$ which are in Bourbaki limited to upper or lowercase Roman letters with or without accents. A, A', A'', A''' are letters.
+
+(3) The $specific \ signs$ which are the ones available for the theory under consideration. For Theory of Sets they are $=$, $\in$, $\subset$.
+
+
+\end{document}
